@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 // Get the logged-in user's ID from localStorage and send it as a header.
 // The backend uses this to show only that user's tasks.
